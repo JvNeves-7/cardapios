@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5px;
+}
+
+.titulo {
+    text-align: center;
+    padding: 0% 0% 5% 0%;
+}
+
+
+main{
+    text-align: center;
+}
+
+
+
+
+.divMangata {
+    border: 5px solid black;
+    width: 50%; 
+    padding: 80px 80px 80px 80px;
+    margin-left: 25%;
+    background-image: url(assets/BEM-VINDO-AO-MANGATA.jpg);
+    background-size: cover; /*coloca a imagem dentro da caixa*/
+    color: white;
+}
+img{
+    width: 50%;
+    
+} 
+
+button {
+    padding: 10px;
+    margin: 10px;
+}
+
+.donLadino {
+    border: 5px solid black;
+    width: 50%; 
+    margin-left: 25%;
+    background-image: url(assets/Don\ ladino\ ambiente-externo.jpg);
+    background-size: cover;
+    padding: 80px 80px 80px 80px;
+    color: white;
+}
+
+.binuCoffee {
+    border: 5px solid black;
+    width: 50%; 
+    margin-left: 25%;
+    background-image: url(assets/Binu\ Premium\ Coffee2.png);
+    background-size: cover;
+    padding: 80px 80px 80px 80px;
+    color: white;
+
+} 
+
+.Betim{
+    border: 5px solid black;
+    width: 50%; 
+    margin-left: 25%;
+    background-image: url(assets/2Quintal_do_Betim.jpg);
+    background-size: cover;
+    padding: 80px 80px 80px 80px;
+    color: white;
+}
+
+
+
+@media (max-width: 580px)  {
+    .header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .restaurantes {
+        display: flex;
+        flex-direction: column;
+        
+    }
+}
