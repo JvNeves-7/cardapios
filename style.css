@@ -76,7 +76,7 @@ button {
 
 
 
-@media (max-width: 650px)  {
+@media (max-width: 480px)  {
     .header {
         display: flex;
         flex-direction: column;
