@@ -75,7 +75,7 @@ button {
 }
 
 @media (max-width: 768px)  {
-    .header {
+    header {
         flex-direction: column;
         text-align: center;
     }
