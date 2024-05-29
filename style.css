@@ -76,15 +76,4 @@ button {
 
 
 
-@media (max-width: 480px)  {
-    .header {
-        display: flex;
-        flex-direction: column;
-    }
 
-    .restaurantes {
-        display: flex;
-        flex-direction: column;
-        
-    }
-}
