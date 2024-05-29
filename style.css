@@ -28,13 +28,13 @@ main{
     border: 5px solid black;
     width: 50%; 
     padding: 80px 80px 80px 80px;
-    margin-left: 25%;
+    margin: 20px auto;
     background-image: url(assets/BEM-VINDO-AO-MANGATA.jpg);
     background-size: cover; /*coloca a imagem dentro da caixa*/
     color: white;
 }
 img{
-    width: 50%;
+    width: 100%;
     
 } 
 
@@ -46,7 +46,7 @@ button {
 .donLadino {
     border: 5px solid black;
     width: 50%; 
-    margin-left: 25%;
+    margin: 20px auto;
     background-image: url(assets/Don\ ladino\ ambiente-externo.jpg);
     background-size: cover;
     padding: 80px 80px 80px 80px;
@@ -56,7 +56,7 @@ button {
 .binuCoffee {
     border: 5px solid black;
     width: 50%; 
-    margin-left: 25%;
+    margin: 20px auto;
     background-image: url(assets/Binu\ Premium\ Coffee2.png);
     background-size: cover;
     padding: 80px 80px 80px 80px;
@@ -67,12 +67,48 @@ button {
 .Betim{
     border: 5px solid black;
     width: 50%; 
-    margin-left: 25%;
+    margin: 20px auto;
     background-image: url(assets/2Quintal_do_Betim.jpg);
     background-size: cover;
     padding: 80px 80px 80px 80px;
     color: white;
 }
+
+@media (max-width: 768px)  {
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .divMangata, .donLadino, .binuCoffee, .Betim {
+        width: 80%;
+        padding: 40px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 10px;
+    }
+
+    .divMangata, .donLadino, .binuCoffee, .Betim {
+        width: 90%; 
+        padding: 20px 10px;
+    }
+
+    header img {
+        width: 80px;
+    }
+
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    header p {
+        font-size: 1em;
+    }
+}
+
 
 
 
