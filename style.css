@@ -74,6 +74,18 @@ button {
     color: white;
 }
 
+.fautino{
+    border: 3px solid black;
+    width: 80%; 
+    padding: 80px 80px 80px 80px;
+    /* margin-left: 25%; */
+    margin: 20px auto;
+    background-image: url(assets/faustino-phb.jpg);
+    background-size: cover; /*coloca a imagem dentro da caixa*/
+    color: black;
+    
+}
+
 @media (max-width: 768px)  {
     header {
         flex-direction: column;
