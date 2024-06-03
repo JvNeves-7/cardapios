@@ -92,25 +92,22 @@ button {
         text-align: center;
     }
 
-    .divMangata, .donLadino, .binuCoffee, .Betim, .faustino  {
+    .divMangata, .donLadino, .binuCoffee, .Betim {
         width: 80%;
         padding: 40px 20px;
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 480px)  {
     header {
         padding: 10px;
     }
 
-    .divMangata, .donLadino, .binuCoffee, .Betim, .faustino {
-        width: 90%; 
+    .divMangata, .donLadino, .binuCoffee, .Betim, .fautino {
+        width: 90%;
         padding: 20px 10px;
     }
-
-header img {
-        width: 80px;
-    }
+}
 
 
 
