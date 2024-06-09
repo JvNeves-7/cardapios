@@ -1,124 +1,65 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-header {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 5px;
-}
-
-.titulo {
-    text-align: center;
-    padding: 0% 0% 5% 0%;
-}
-
-
-main{
-    text-align: center;
-}
-
-
-
-
-.divMangata {
-    border: 5px solid black;
-    width: 50%; 
-    padding: 80px 80px 80px 80px;
-    margin: 20px auto;
-    background-image: url(assets/BEM-VINDO-AO-MANGATA.jpg);
-    background-size: cover; /*coloca a imagem dentro da caixa*/
-    color: white;
-}
-img{
-    width: 100%;
-    
-} 
-
-button {
-    padding: 10px;
-    margin: 10px;
-}
-
-.donLadino {
-    border: 5px solid black;
-    width: 50%; 
-    margin: 20px auto;
-    background-image: url(assets/Don\ ladino\ ambiente-externo.jpg);
-    background-size: cover;
-    padding: 80px 80px 80px 80px;
-    color: white;
-}
-
-.binuCoffee {
-    border: 5px solid black;
-    width: 50%; 
-    margin: 20px auto;
-    background-image: url(assets/Binu\ Premium\ Coffee2.png);
-    background-size: cover;
-    padding: 80px 80px 80px 80px;
-    color: white;
-
-} 
-
-.Betim{
-    border: 5px solid black;
-    width: 50%; 
-    margin: 20px auto;
-    background-image: url(assets/2Quintal_do_Betim.jpg);
-    background-size: cover;
-    padding: 80px 80px 80px 80px;
-    color: white;
-}
-
-.fautino {
-    border: 3px solid black;
-    width: 50%; 
-    padding: 80px 80px 80px 80px;
-    /* margin-left: 25%; */
-    margin: 20px auto;
-    background-image: url(assets/faustino-phb.jpg);
-    background-size: cover; /*coloca a imagem dentro da caixa*/
-    color: black;
-    
-}
-.Grillados {
-    border: 3px solid black;
-    width: 50%; 
-    padding: 80px 80px 80px 80px;
-    /* margin-left: 25%; */
-    margin: 20px auto;
-    background-image: url(assets/grillados-espetos.webp);
-    background-size: cover; /*coloca a imagem dentro da caixa*/
-    color: white;
-}
-
-@media (max-width: 768px)  {
-    header {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .divMangata, .donLadino, .binuCoffee, .Betim, .fautino, .Grillados {
-        width: 80%;
-        padding: 40px 20px;
-    }
-}
-
-@media (max-width: 480px)  {
-    header {
-        padding: 10px;
-    }
-
-    .divMangata, .donLadino, .binuCoffee, .Betim, .fautino, .Grillados {
-        width: 90%;
-        padding: 20px 10px;
-    }
-}
-
-
-
-
+body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            overflow: hidden;
+            padding: 0 20px;
+        }
+        .header {
+            text-align: center;
+            padding: 20px 0;
+        }
+        .header h1 {
+            margin: 0;
+            color: #333;
+        }
+        .restaurants {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .restaurant {
+            background: #fff;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            flex: 1 1 calc(33% - 40px);
+            box-sizing: border-box;
+            max-width: calc(33% - 40px);
+        }
+        .restaurant img {
+            width: 100%;
+            border-radius: 8px;
+        }
+        .restaurant h2 {
+            margin-top: 10px;
+            color: #333;
+        }
+        .restaurant p {
+            color: #666;
+        }
+        .restaurant a {
+            display: inline-block;
+            margin-top: 10px;
+            text-decoration: none;
+            color: #00f;
+            font-weight: bold;
+        }
+        @media (max-width: 768px) {
+            .restaurant {
+                flex: 1 1 calc(50% - 40px);
+                max-width: calc(50% - 40px);
+            }
+        }
+        @media (max-width: 480px) {
+            .restaurant {
+                flex: 1 1 100%;
+                max-width: 100%;
+            }
+        }
