@@ -51,6 +51,25 @@ body {
             color: #00f;
             font-weight: bold;
         }
+
+            .restaurant a.button {
+        display: inline-block;
+        margin-top: 10px;
+        text-decoration: none;
+        color: #fff; /* Cor do texto */
+        font-weight: bold;
+        background-color: #00f; /* Cor de fundo */
+        padding: 10px 20px; /* Espaçamento interno */
+        border-radius: 5px; /* Cantos arredondados */
+        border: none; /* Remove borda */
+        cursor: pointer; /* Cursor de ponteiro */
+        transition: background-color 0.3s; /* Transição suave para mudança de cor */
+    }
+
+
+        .restaurant a.button:hover {
+            background-color: #005bb5; /* Cor de fundo ao passar o mouse */
+    }
         @media (max-width: 768px) {
             .restaurant {
                 flex: 1 1 calc(50% - 40px);
